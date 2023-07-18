@@ -14,7 +14,7 @@ The task contains client and server sides. Webpage created using HTML, SCSS and 
 
 ## Getting started
 
-1 Clone this repository to your local machine:
+1. Clone this repository to your local machine:
 ```bash
 git clone https://github.com/BlacktorDied/Serokell-Frontend-Task.git
 ```
