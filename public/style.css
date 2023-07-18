@@ -1,0 +1,258 @@
+@import url("reset.css");
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.header img {
+  height: 5vh;
+  padding-left: 10%;
+}
+.header .header-links {
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-left: 20px;
+  transition: all 0.4s;
+}
+.header a:hover {
+  color: white;
+}
+
+.title-container {
+  height: 100vh;
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-container .title {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.title-container .feedback {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border-style: none;
+  background-color: white;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+.title-container .feedback:hover {
+  box-shadow: 5px 5px 10px black;
+  transform: scale(1.2);
+}
+
+.main-section {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section .subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.main-section .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
+.main-section .section.one {
+  flex-wrap: wrap;
+  position: relative;
+  left: -20vw;
+}
+.main-section .section.one img {
+  width: 80vh;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.main-section .section.one p {
+  width: 40%;
+}
+.main-section .section.two {
+  flex-wrap: wrap-reverse;
+}
+.main-section .section.two img {
+  width: 40vh;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  order: 1;
+}
+.main-section .section.two p {
+  width: 70%;
+}
+.main-section .section p {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 50px;
+}
+.main-section .section img {
+  width: 50%;
+}
+
+.contact-section {
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .contact {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px;
+}
+.contact-section form {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 24px;
+  position: relative;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 33px;
+  margin-bottom: 100px;
+}
+.contact-section form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.contact-section form input {
+  box-sizing: border-box;
+  border-radius: 24px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.contact-section form textarea {
+  min-height: 15vh;
+  max-height: 35vh;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  resize: vertical;
+}
+.contact-section form input[type=submit] {
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border-style: none;
+  background-color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  transition: all 0.5s;
+}
+.contact-section form input[type=submit]:hover {
+  box-shadow: 5px 5px 10px black;
+  transform: scale(1.2);
+}
+
+.footer {
+  max-height: 30vh;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-links {
+  width: 80vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+  padding: 20px;
+}
+.footer .left, .footer .right {
+  height: 15vh;
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer .left a, .footer .right a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1vh;
+  transition: all 0.4s;
+}
+.footer .left a:hover, .footer .right a:hover {
+  transform: scale(1.2);
+}
+.footer img {
+  height: 0.8rem;
+  color: white;
+  margin-right: 10px;
+}
+.footer .copyright {
+  width: 80vw;
+  align-self: end;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 738px) {
+  .section.one {
+    position: static !important;
+  }
+  .section p {
+    width: 80vh !important;
+  }
+  .contact-section form {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */
