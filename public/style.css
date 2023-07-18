@@ -22,7 +22,7 @@ html {
   height: 5vh;
   padding-left: 10%;
 }
-.header .header-links {
+.header-links {
   padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
@@ -92,15 +92,16 @@ html {
   margin: 5vh;
 }
 .main-section .section.one {
+  width: 100vw;
   flex-wrap: wrap;
   position: relative;
   left: -20vw;
 }
 .main-section .section.one img {
-  width: 80vh;
+  width: 60%;
   height: 40vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }
@@ -123,8 +124,8 @@ html {
   width: 70%;
 }
 .main-section .section p {
-  text-align: center;
   box-sizing: border-box;
+  line-height: 1.5;
   padding: 20px 50px;
 }
 .main-section .section img {
@@ -208,12 +209,12 @@ html {
   display: flex;
   flex-direction: column;
 }
-.footer .footer-links {
+.footer-links {
   width: 80vw;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-self: end;
+  align-self: center;
   padding: 20px;
 }
 .footer .left, .footer .right {
@@ -240,7 +241,7 @@ html {
   margin-right: 10px;
 }
 .footer .copyright {
-  width: 80vw;
+  width: 90vw;
   align-self: end;
   text-align: center;
   color: white;
@@ -253,10 +254,14 @@ html {
   .section.one {
     position: static !important;
   }
+  .section img {
+    height: 100% !important;
+    width: 80% !important;
+  }
   .section p {
-    width: 80vh !important;
+    width: 100vw !important;
   }
   .contact-section form {
-    width: 80vw;
+    width: 80vw !important;
   }
 }/*# sourceMappingURL=style.css.map */
